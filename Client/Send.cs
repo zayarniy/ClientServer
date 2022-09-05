@@ -31,7 +31,7 @@ namespace Client
 
                 //                form.textBox1.Text = (response.ToString());
                 //System.Diagnostics.Debug.WriteLine("Get data:"+response.ToString());
-                System.IO.File.AppendAllText("data.txt", "Get data:" + response.ToString());
+                //System.IO.File.AppendAllText("data.txt", "Get data:" + response.ToString());
                 resp= response.ToString();
                 // Закрываем потоки
                 stream.Close();
@@ -39,24 +39,16 @@ namespace Client
             }
             catch (SocketException e)
             {
-                Console.WriteLine(e);
+                System.IO.File.AppendAllText("log.txt", e.Message+"\r\n");                
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                System.IO.File.AppendAllText("log.txt", e.Message + "\r\n");
             }
 
-            Console.WriteLine("Запрос завершен...");
-            Console.Read();
+            //Console.WriteLine("Запрос завершен...");
+            //Console.Read();
 
-            try
-            {
- 
-            }
-            catch(Exception e)
-            {
-                System.Diagnostics.Debug.WriteLine(e.Message);  
-            }
 
         }
 

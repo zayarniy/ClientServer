@@ -26,16 +26,16 @@ namespace Server
 
                 //while (true)
                 {
-                    Thread.Sleep(1000);
+                    //Thread.Sleep(1000);
                     //System.Diagnostics.Debug.WriteLine(DateTime.Now.ToString());
                     // получаем входящее подключение
                     TcpClient client = server.AcceptTcpClient();
                     // получаем сетевой поток для чтения и записи
                     NetworkStream stream = client.GetStream();
                     // сообщение для отправки клиенту
-                    string response = message; // "Server send:" + DateTime.Now.ToString();// form.textBox2.Text;
+                    //string response = message; // "Server send:" + DateTime.Now.ToString();// form.textBox2.Text;
                     // преобразуем сообщение в массив байтов
-                    byte[] data = Encoding.UTF8.GetBytes(response);
+                    byte[] data = Encoding.UTF8.GetBytes(message);
 
                     // отправка сообщения
                     stream.Write(data, 0, data.Length);

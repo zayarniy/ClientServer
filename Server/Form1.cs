@@ -24,15 +24,9 @@ namespace Server
         private void button1_Click(object sender, EventArgs e)
         {
             Connect c1=new Connect();
-            c1.FunctConn(textBox1.Text);
-            //thread = new Thread(c1.FunctConn);
-            
-            //thread.Start(); 
+            c1.FunctConn(textBox1.Text);            
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
+  
     }
 }
