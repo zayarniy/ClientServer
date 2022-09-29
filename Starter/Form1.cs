@@ -35,8 +35,11 @@ namespace Starter
             
             tbServerPath.Text = Properties.Settings.Default["ServerPath"]?.ToString();
             tbClientPath.Text= Properties.Settings.Default["ClientPath"]?.ToString();
-            System.Diagnostics.Process.Start(tbServerPath.Text);
-            System.Diagnostics.Process.Start(tbClientPath.Text);
+            if (tbClientPath.Text != String.Empty && tbServerPath.Text != String.Empty)
+            {
+                System.Diagnostics.Process.Start(tbServerPath.Text);
+                System.Diagnostics.Process.Start(tbClientPath.Text);
+            }
 
         }
 

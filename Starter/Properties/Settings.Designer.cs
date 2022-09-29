@@ -25,7 +25,7 @@ namespace Starter.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CS_Projects\\ClientServer\\Server2\\bin\\Debug\\Server2.exe")]
         public string ServerPath {
             get {
                 return ((string)(this["ServerPath"]));
@@ -37,7 +37,7 @@ namespace Starter.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CS_Projects\\ClientServer\\Client2\\bin\\Debug\\Client2.exe")]
         public string ClientPath {
             get {
                 return ((string)(this["ClientPath"]));

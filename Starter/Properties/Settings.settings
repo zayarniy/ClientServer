@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="ServerPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">D:\CS_Projects\ClientServer\Server2\bin\Debug\Server2.exe</Value>
     </Setting>
     <Setting Name="ClientPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">D:\CS_Projects\ClientServer\Client2\bin\Debug\Client2.exe</Value>
     </Setting>
   </Settings>
 </SettingsFile>
