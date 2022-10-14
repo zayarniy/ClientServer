@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientServerLib\ClientServerLib.csproj">
+      <Project>{8ccc69a0-f0ad-45ea-be3d-6b71166bb1db}</Project>
+      <Name>ClientServerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

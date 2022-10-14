@@ -73,7 +73,7 @@ namespace Client2
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(322, 42);
+            this.button3.Location = new System.Drawing.Point(297, 42);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 23);
             this.button3.TabIndex = 4;
@@ -93,7 +93,7 @@ namespace Client2
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Client";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
